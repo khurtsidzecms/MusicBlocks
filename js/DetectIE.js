@@ -1,4 +1,5 @@
-var DetectIE = function() {
+window.onload = function()
+{
 	var IE = ('ActiveXObject' in window && +(/\s(?:MSIE\s|rv\:)(\d+)/.exec(navigator.userAgent)[1])) || NaN;
 
 	if(IE < 12) {
@@ -13,5 +14,3 @@ var DetectIE = function() {
 	}
 	
 }
-
-DetectIE();
