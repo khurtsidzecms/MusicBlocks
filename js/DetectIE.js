@@ -2,7 +2,7 @@ window.onload = function()
 {
 	var IE = ('ActiveXObject' in window && +(/\s(?:MSIE\s|rv\:)(\d+)/.exec(navigator.userAgent)[1])) || NaN;
 
-	if(IE < 12) {
+	if(IE) {
 		document.body.innerHTML =  "<div style='margin: 200px;'>";
 		document.body.innerHTML += "<h1 style='font-size: 100px; font-family: Arial; text-align: center; color: #F00;'>Music Blocks</h1>";
 		document.body.innerHTML += "<h3 style='font-size: 40px; font-family: Arial; text-align: center;'>Music Blocks will not work in Internet Explorer, you can use:</h3>";
